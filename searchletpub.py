@@ -307,6 +307,8 @@ def apply_excel_style(ws):
         wrap_text=True
     )
 
+
+
     for row in ws.iter_rows():
         for cell in row:
             if cell.value is not None and str(cell.value).strip() != "":
