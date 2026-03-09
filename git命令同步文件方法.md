@@ -16,3 +16,8 @@ git commit -m "update searchletpub"
 git pull --rebase origin main
 git push origin main
 ```
+如果中文文件名显示成乱码转义，可以使用命令
+```
+git config --global core.quotepath false
+```
+再```git status```后中文文件名会正常显示
